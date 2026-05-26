@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Bank extends Model
+{
+    /** @use HasFactory<\Database\Factories\BankFactory> */
+    use HasFactory;
+      protected $fillable = [
+        'name',
+        'code',
+        'ussd_template',
+        'base_ussd_code',
+        'transfer_ussd_template'
+    ];
+}
